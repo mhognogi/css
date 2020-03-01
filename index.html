@@ -1,10 +1,15 @@
 <html>
-  <head>
+<head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-  </head>
-  <body>
-    <div style='color: #f00;'>111</div>
-    test 1337
-    <div style='color: #0f0;'>222</div>
-  </body>
+    <script>
+        function showCoords(event) {
+            var x = event.clientX;
+            var y = event.clientY;
+            var coords = "X coords: " + x + ", Y coords: " + y;
+            document.getElementById("demo").innerHTML = coords;
+        }
+    </script>
+</head>
+<body onclick="showCoords()">
+</body>
 </html>
