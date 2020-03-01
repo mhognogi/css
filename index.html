@@ -9,7 +9,17 @@
             document.getElementById("demo").innerHTML = coords;
         }
     </script>
+    <style>
+        .pad{
+            height: 100%;
+            width: 100%;
+            background: azure;
+        }
+    </style>
 </head>
-<body onclick="showCoords()">
+<body>
+<div class="pad" onclick="showCoords(event)">
+    <div id="demo"></div>
+</div>
 </body>
 </html>
